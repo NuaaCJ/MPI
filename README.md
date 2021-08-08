@@ -15,7 +15,7 @@ Code for paper "MPI: Multi-receptive and Parallel Integration for Salient Object
 
 Clone this repo into your workstation
 ```bash
-git clone https://gitee.com/nuaacj/mpi.git
+git clone https://github.com/NuaaCJ/MPI.git
 ```
 
 ##### - training
