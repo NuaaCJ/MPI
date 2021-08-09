@@ -14,7 +14,7 @@ import dataset2
 from MPI  import MPI
 from apex import amp
 
-def structure_loss(pred, mask,edge):
+def loss_weig(pred, mask,edge):
     weit = 1 + torch.sigmoid(edge)
     wbce = F.binary_cross_entropy_with_logits(pred, mask, reduction='mean')
     wbce = (weit * wbce).sum(dim=(2, 3)) / weit.sum(dim=(2, 3))
@@ -59,8 +59,8 @@ def train(Dataset, Network):
             image, mask , edge = image.cuda().float(), mask.cuda().float(), edge.cuda().float()
             pre1,pre2 = net(image)
 
-            loss1 = structure_loss(pre1, mask,edge)
-            loss2 = structure_loss(pre2, mask,edge)
+            loss1 = loss_weig(pre1, mask,edge)
+            loss2 = loss_weig(pre2, mask,edge)
 
             loss=loss1+loss2
             optimizer.zero_grad()
