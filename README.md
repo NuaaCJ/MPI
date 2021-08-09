@@ -1,6 +1,6 @@
 ## MPI: Multi-receptive and Parallel Integration for Salient Object Detection
 
-Code for paper "MPI: Multi-receptive and Parallel Integration for Salient Object Detection", by Han Sun, Jun Cen , Ningzhong Liu1, Dong Liang, and Huiyu Zhou.
+Code for paper "MPI: Multi-receptive and Parallel Integration for Salient Object Detection", by Han Sun, Jun Cen , Ningzhong Liu, Dong Liang, and Huiyu Zhou.
 
 #### Requirement
 
