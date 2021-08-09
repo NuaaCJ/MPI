@@ -62,15 +62,14 @@ if __name__=='__main__':
     matlab=transplant.Matlab(jvm=False, desktop=False)
 
     for path in ['/media/cen/Doc1/SOD/ECSSD/']:
-           for i in range(36,37):
-                  snapshot=model_pth+'model-'+str(i)
-                  file=open('./result.txt','a')
-                  file.write('\n'+snapshot+'\n')
-                  file.close()
-                  t = Test(dataset2, MPI, path, snapshot)
-                  t.save()
-                  print("开始评估，请等待！")
-                  matlab.main_function()
+        snapshot=model_pth+'MPI_model'
+        file=open('./result.txt','a')
+        file.write('\n'+snapshot+'\n')
+        file.close()
+        t = Test(dataset2, MPI, path, snapshot)
+        t.save()
+        print("开始评估，请等待！")
+        matlab.main_function()
 
-                  #eng = matlab.engine.start_matlab()
-                  #eng.main_function(nargout=0)
+        #eng = matlab.engine.start_matlab()
+        #eng.main_function(nargout=0)
