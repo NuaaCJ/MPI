@@ -13,10 +13,25 @@ Code for paper "MPI: Multi-receptive and Parallel Integration for Salient Object
 
 #### Usage
 
-Clone this repo into your workstation
+- Clone this repo into your workstation
 ```bash
 git clone https://github.com/NuaaCJ/MPI.git
 ```
+- Set your dataset format as follows:
+
+  ECSSD\
+   
+   --Image\ *.jpg
+   
+   --Mask\ *.png
+   
+  DUTS\
+  
+   --Image\ *.jpg
+   
+   --Mask\ *.png
+   
+  ...
 
 ##### - training
 
