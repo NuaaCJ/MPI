@@ -60,7 +60,7 @@ python3.5 test.py
 
 #### The result saliency maps
 
-Here are saliency maps of our model on five different datasets (DUTS, ECSSD, DUT-OMRON, HKU-IS, PASCAL-S) [The result saliency maps](https://pan.baidu.com/s/1GZbVybeKPLFk6gzmMy_1uQ) (passed: maps)
+Here are saliency maps of our model on five different datasets (DUTS, ECSSD, DUT-OMRON, HKU-IS, PASCAL-S) [The result saliency maps](https://pan.baidu.com/s/1GZbVybeKPLFk6gzmMy_1uQ) (passwd: maps)
 
 #### Acknowledgements
 
